@@ -1,0 +1,49 @@
+:root {
+  --light-gray: #dadce0;
+  --teal: #009688;
+  --dark-blue: #3f51b5;
+  --dark: #232323;
+}
+
+body {
+  margin: 0;
+  background-color: var(--light-gray);
+  font-family: "Courier New", Courier, monospace;
+}
+
+nav,
+footer {
+  background-color: var(--dark-blue);
+  color: white;
+  padding: 20px 30px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.food-form {
+  background-color: var(--dark-blue);
+  color: white;
+  padding: 20px 30px;
+  font-family: "Courier New", Courier, monospace;
+}
+#add-content {
+  height: 40vh;
+  width: 50%;
+  background-color: #009688;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#form {
+  height: 40vh;
+  background-color: var(--light-gray);
+  align-content: center;
+  display: block;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+nav h1 {
+  margin: 0;
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

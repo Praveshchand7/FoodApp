@@ -1,0 +1,124 @@
+:root {
+  --light-gray: #dadce0;
+  --teal: #009688;
+  --dark-blue: #3f51b5;
+  --dark: #232323;
+}
+
+body {
+  background-color: var(--light-gray);
+  margin: 0;
+  font-family: Courier New, Courier, monospace;
+}
+
+nav, footer, .food-form {
+  background-color: var(--dark-blue);
+  color: #fff;
+  padding: 20px 30px;
+  font-family: Courier New, Courier, monospace;
+}
+
+#form {
+  height: 50vh;
+  background-color: var(--light-gray);
+  align-content: center;
+  margin-top: 20px;
+  padding: 30px;
+  display: block;
+}
+
+nav h1 {
+  margin: 0;
+}
+
+button {
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  background-color: #0ff;
+  border-style: dashed;
+  border-radius: 5px;
+  padding: .5rem 1rem;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.style {
+  height: 30vh;
+  width: 100%;
+  font-family: Courier New, Courier, monospace;
+}
+
+input, select {
+  width: 20%;
+  border: 1px solid #999;
+  border-radius: 20px;
+  outline: none;
+  margin: 10px 0;
+  padding: 12px;
+  font-family: Courier New, Courier, monospace;
+}
+
+#submit {
+  background-size: contain;
+  align-self: center;
+}
+
+#close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#add {
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 0%;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.delete {
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.card__items {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.snackbar {
+  color: #f1f1f1;
+  min-height: 50px;
+  min-width: 290px;
+  box-sizing: border-box;
+  visibility: hidden;
+  will-change: transform;
+  background: #323232;
+  border-radius: 2px;
+  padding: 16px 24px 12px;
+  font-size: 90%;
+  transition: visibility .3s, transform .3s, -webkit-transform .3s;
+  display: inline-block;
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  transform: translateY(100px);
+  box-shadow: 0 2px 5px #00000042;
+}
+
+.snackbar--visible {
+  visibility: visible;
+  transform: none;
+}
+
+/*# sourceMappingURL=index.2cdaf7bc.css.map */

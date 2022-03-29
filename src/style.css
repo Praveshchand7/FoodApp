@@ -1,0 +1,107 @@
+:root {
+  --light-gray: #dadce0;
+  --teal: #009688;
+  --dark-blue: #3f51b5;
+  --dark: #232323;
+}
+
+body {
+  margin: 0;
+  background-color: var(--light-gray);
+  font-family: "Courier New", Courier, monospace;
+}
+
+nav,
+footer {
+  background-color: var(--dark-blue);
+  color: white;
+  padding: 20px 30px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.food-form {
+  background-color: var(--dark-blue);
+  color: white;
+  padding: 20px 30px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#form {
+  height: 50vh;
+  background-color: var(--light-gray);
+  align-content: center;
+  display: block;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+nav h1 {
+  margin: 0;
+}
+
+button {
+  height: 60px;
+  width: 60px;
+  background-color: aqua;
+  padding: 0.5rem 1rem;
+  border-style: dashed;
+  border-radius: 5px;
+
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+.style {
+  font-family: "Courier New", Courier, monospace;
+  height: 30vh;
+  width: 100%;
+}
+
+/* Sizing the input fields */
+input,
+select {
+  border-radius: 20px;
+  width: 20%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #999;
+  outline: none;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#submit {
+  align-self: center;
+  background-size: contain;
+}
+
+#close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#add {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  background-repeat: no-repeat;
+  border-radius: 0%;
+  background-size: contain;
+}
+
+.delete {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  bottom: 0rem;
+  left: 0rem;
+}
+
+.card__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}

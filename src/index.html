@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Food App</title>
+  </head>
+
+  <body>
+    <nav>
+      <h1>Food App</h1>
+    </nav>
+    <main>
+      <div id="add-content">
+        <div>
+          <form id="form">
+            <h2>Food selection</h2>
+            <div>
+              <label for="menu-name">Name of Food</label>
+              <select name="menu-name" id="menu-name">
+                <option selected="selected">Enter Food</option>
+                <option value="Pizza">Pizza</option>
+                <option value="Burger">Burger</option>
+                <option value="Biryani">Biryani</option>
+                <option value="Salad">Salad</option>
+              </select>
+            </div>
+            <!-- The three inputs for protein, carbs and fat -->
+            <div>
+              <label for="protein">Protein:</label>
+              <input
+                type="number"
+                placeholder="Enter the protein amount"
+                min="0"
+                id="protein"
+              />
+            </div>
+            <div>
+              <label for="carb">Carb:</label>
+              <input
+                type="number"
+                placeholder="Enter the carb"
+                min="0"
+                id="carb"
+              />
+            </div>
+
+            <div>
+              <label for="fat">Fat:</label>
+              <input
+                type="number"
+                placeholder="Enter the fat"
+                min="0"
+                id="fat"
+              />
+            </div>
+            <button type="submit" id="submit">Enter</button>
+          </form>
+        </div>
+      </div>
+
+      <section class="chart">
+        <h1>Stats</h1>
+        <canvas id="myChart" width="400" height="400"></canvas>
+      </section>
+
+      <section class="total">
+        <h1>Log</h1>
+        <div>
+          <span id="totalCalori"></span>
+        </div>
+        <div class="cardFrame"></div>
+      </section>
+    </main>
+
+    <footer>
+      <h2>Food app of Pravesh Chand</h2>
+    </footer>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
